@@ -21,7 +21,7 @@ unsafe = true
 [markup.highlight]
 codeFences = false  # use highlight.js 
 # codeFences = true  # use hugo highlighting at compile time
-style = "tango"  # set a style for hugo highlighting
+style = "github"  # set a style for hugo highlighting
 
 [outputFormats.Reveal]
 baseName = "index"
@@ -31,12 +31,14 @@ isHTML = true
 [params.reveal_hugo]
 history = true
 theme = "league"
-highlight_theme = "solarized-dark"
+highlight_theme = "github"
 slide_number = true
 transition = "slide"
 transition_speed = "fast"
 custom_theme = "custom-theme.scss"
 custom_theme_compile = true
+width = '1440'
+height = '900'
 
 [params.reveal_hugo.custom_theme_options]
 targetPath = "css/custom-theme.css"
