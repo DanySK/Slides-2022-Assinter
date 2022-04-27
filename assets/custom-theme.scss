@@ -1,19 +1,18 @@
 @import "reveal-js/css/theme/template/mixins";
 @import "reveal-js/css/theme/template/settings";
 
-
 // Include theme-specific fonts
 @import url(reveal-js/lib/font/source-sans-pro/source-sans-pro.css);
 
-// $backgroundColor: #fff;
+$backgroundColor: #d3d3d3;
 
-// $mainColor: #000;
-// $headingColor: #111;
+$mainColor: #000;
+$headingColor: #d10019;
 
 $mainFontSize: 2em;
-$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingLetterSpacing: normal;
+// $mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+// $headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+// $headingLetterSpacing: normal;
 $headingFontWeight: 600;
 $linkColor: #2690e7;
 $linkColorHover: lighten( $linkColor, 25% );
@@ -24,7 +23,30 @@ $heading2Size: 1.6em;
 $heading3Size: 1.3em;
 $heading4Size: 1.0em;
 
+@mixin bodyBackground() {
+	background: $headingColor;
+}
+
 @import "reveal-js/css/theme/template/theme";
+
+.reveal .slide-background-content {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    height: 0;
+    border: 1em solid rgb(255, 255, 255);
+}
+
+.reveal .slide-background-content::before {
+	content:url("https://raw.githubusercontent.com/DanySK/Slides-2022-Assinter/master/content/assinter.png");
+	transform: scale(0.5, 0.5);
+	position: absolute;
+	top: -1em;
+	left: -1em;
+    width: 10%;
+    height: 3%;
+}
 
 section.has-light-background {
 	&, h1, h2, h3, h4, h5, h6 {
@@ -39,12 +61,12 @@ section.has-light-background {
 .reveal strong,
 .reveal b {
 	font-weight: bold;
-	color: #ff3030
+	color: #d10019
 }
 
 .reveal em {
 	font-style: italic;
-	color: #48ff64
+	color: #558337
 }
 
 .reveal section img {

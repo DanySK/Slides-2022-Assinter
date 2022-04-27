@@ -15,8 +15,6 @@ outputs = ["Reveal"]
 
 ---
 
-
-
 # Development
 
 * Analysis of a domain
@@ -4324,7 +4322,7 @@ These copies are called **forks**
 * Single branch, multiple independent repository copies
 
 <p>
-{{< image src="2021-04-14-dvcs-fork.svg" max-h="50">}}
+{{< image src="2021-04-14-dvcs-fork.svg" max-h="40">}}
 </p>
 
 * *Unknown* team size, *low-complexity* projects, *sparse* teams, *low* trust
@@ -4337,7 +4335,7 @@ These copies are called **forks**
 * Single branch, multiple independent repository copies
 
 <p>
-{{< image src="2021-04-14-dvcs-flow-fork.svg" max-h="50">}}
+{{< image src="2021-04-14-dvcs-flow-fork.svg" max-h="40">}}
 </p>
 
 * *Unknown* team size, *high-complexity* projects, *sparse* teams, *low* trust

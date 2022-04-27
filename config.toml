@@ -30,7 +30,7 @@ isHTML = true
 
 [params.reveal_hugo]
 history = true
-theme = "league"
+theme = "robot-lung"
 highlight_theme = "github"
 slide_number = true
 transition = "slide"
